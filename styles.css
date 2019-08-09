@@ -1,13 +1,10 @@
 .bg {
-    background: #F7971E;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FFD200, #F7971E);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FFD200, #F7971E);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: rgb(153, 255, 116);
+    background: radial-gradient(circle, rgba(153, 255, 116, 1) 23%, rgba(255, 91, 247, 1) 53%, rgba(255, 177, 0, 1) 89%);
 
 }
-.btn{
+
+.btn {
     display: inline-block;
     text-align: center;
     vertical-align: middle;
@@ -25,8 +22,9 @@
     font: normal normal bold 26px comic sans ms;
     color: #ffffff;
     text-decoration: none;
-    
+
 }
+
 .button:hover,
 .button:focus {
     background: #4d3c3c;
@@ -36,6 +34,7 @@
     color: #ffffff;
     text-decoration: none;
 }
+
 .button:active {
     background: #261e1e;
     background: -webkit-gradient(linear, left top, left bottom, from(#261e1e), to(#ff00c4));
@@ -48,4 +47,3 @@ html {
     width: 100%;
     overflow-x: hidden;
 }
-
