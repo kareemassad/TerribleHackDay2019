@@ -5,6 +5,39 @@ var color;
 body.classList.add("bg");
 var bool = true;
 
+function randomValues() {
+    anime({
+        targets: '.btn',
+        translateX: function () {
+            return anime.random(-1000, 1000);
+        },
+        translateY: function () {
+            return anime.random(0, 1000);
+        },
+        easing: 'easeInOutQuad',
+        duration: 300,
+        complete: randomValues
+    });
+}
+
+
+
+// const btnAnim = anime({
+//     targets: '.btn',
+//     translateX: function () {
+//         return anime.random(0, 500);
+//     },
+//     translateY: function() {
+//         return anime.random(0, 270);
+//       },
+//     scale: 2,
+//     // translateX: -500,
+//     duration: 1000,
+//     direction: 'alternate',
+//     loop: true,
+//     easing: 'easeInOutSine'
+// });
+
 // while(bool){
 
 
@@ -20,18 +53,9 @@ btn.addEventListener("click", function () {
     var timer = setInterval(function () {
         color = chroma.random();
         body.style.backgroundColor = color;
-        anime({
-            targets: '.btn',
-            translateX: 1000,
-            translateY: 500,
-            duration: 300,
-            direction: 'alternate',
-            loop: true,
-            easing: 'easeInOutSine'
-        });
     }, 50);
 
-
+    randomValues();
     setTimeout(function () {
 
     }, 100);
@@ -40,6 +64,7 @@ btn.addEventListener("click", function () {
         clearInterval(timer);
         body.classList.add("bg");
         btn.textContent = "again! again!";
+        bool = false;
 
     });
 
