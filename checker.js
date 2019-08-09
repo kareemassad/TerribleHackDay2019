@@ -14,6 +14,9 @@ function randomValues() {
         translateY: function () {
             return anime.random(0, 1000);
         },
+        scale: function () {
+            return anime.random(0.5, 3);
+        },
         easing: 'easeInOutQuad',
         duration: 300,
         complete: randomValues
