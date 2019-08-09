@@ -1,6 +1,8 @@
 var body = document.querySelector("body");
 var btn = document.querySelector(".btn");
 var color;
+var barbie = new Audio();
+barbie.src = "Im a barbie girl in a barbie woooorrrrllld.mp3"
 
 body.classList.add("bg");
 var bool = true;
@@ -18,7 +20,7 @@ function randomValues() {
             return anime.random(0.5, 3);
         },
         easing: 'easeInOutQuad',
-        duration: 300,
+        duration: 450,
         complete: randomValues
     });
 }
@@ -47,6 +49,7 @@ function randomValues() {
 
 btn.addEventListener("click", function () {
     body.classList.remove("bg");
+    barbie.play();
 
     color = "#FF0000";
     body.style.backgroundColor = color;
@@ -61,7 +64,7 @@ btn.addEventListener("click", function () {
     randomValues();
     setTimeout(function () {
 
-    }, 100);
+    }, 10);
 
     btn.addEventListener("click", function () {
         clearInterval(timer);
