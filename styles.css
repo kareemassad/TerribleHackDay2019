@@ -1,8 +1,40 @@
+html {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+
+    background: #F7971E;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFD200, #F7971E);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFD200, #F7971E);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+/* Class start */
 .bg {
     background: rgb(153, 255, 116);
     background: radial-gradient(circle, rgba(153, 255, 116, 1) 23%, rgba(255, 91, 247, 1) 53%, rgba(255, 177, 0, 1) 89%);
 
 }
+
+.img:hover {
+    height: 600px;    
+}
+.bigger{
+    height: 400px;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem auto auto auto
+  }
 
 .btn {
     display: inline-block;
@@ -24,24 +56,15 @@
     text-decoration: none;
 
 }
-
-.button:hover,
-.button:focus {
-    background: #4d3c3c;
-    background: -webkit-gradient(linear, left top, left bottom, from(#4d3c3c), to(#ff00eb));
-    background: -moz-linear-gradient(top, #4d3c3c, #ff00eb);
-    background: linear-gradient(to bottom, #4d3c3c, #ff00eb);
-    color: #ffffff;
-    text-decoration: none;
+.smaller{
+    height: 20px;
 }
-
-.button:active {
-    background: #261e1e;
-    background: -webkit-gradient(linear, left top, left bottom, from(#261e1e), to(#ff00c4));
-    background: -moz-linear-gradient(top, #261e1e, #ff00c4);
-    background: linear-gradient(to bottom, #261e1e, #ff00c4);
+.btn:hover{
+    height: 15%;
 }
-
+.btn:hover,
+.btn:focus {
+.btn:active {
 html {
     height: 100%;
     width: 100%;
